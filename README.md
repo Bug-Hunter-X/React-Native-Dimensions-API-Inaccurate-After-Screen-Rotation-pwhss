@@ -1,0 +1,3 @@
+# React Native Dimensions API Inaccuracy After Screen Rotation
+
+This repository demonstrates a common bug in React Native applications related to the `Dimensions` API and screen orientation changes.  The issue is that the dimensions returned by `Dimensions.get()` might not be updated immediately after a screen rotation, resulting in temporary layout problems.  The solution involves using the `Dimensions` API in conjunction with the `useEffect` hook and the `onLayout` prop to ensure accurate and responsive layout updates.
